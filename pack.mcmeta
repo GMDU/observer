@@ -1,7 +1,12 @@
 {
   "pack": {
     "description": "Observer: Unit testing for Datapacks",
-    "min_format": 119,
-    "max_format": 119
+    "min_format": [34, 0],
+    "max_format": [999, 0],
+    "pack_format": 34,
+    "supported_formats": {
+        "min_inclusive": 34,
+        "max_inclusive": 999
+    },
   }
 }
