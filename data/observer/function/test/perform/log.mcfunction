@@ -1,0 +1,2 @@
+execute if data storage observer:test private{check:true} run function observer:test/perform/log/pass
+execute if data storage observer:test private{check:false} run function observer:test/perform/log/fail

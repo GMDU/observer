@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "Observer: Unit testing for Datapacks",
+    "min_format": 119,
+    "max_format": 119
+  }
+}
