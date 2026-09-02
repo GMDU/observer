@@ -12,8 +12,6 @@ call `observer:api/perform` themselves.
 
 When you run `observer:api/start`, it will run all the tests at once, and number them.
 
-Check `observer:spec` for example tests.
-
 ## API
 ### Perform
 Checks that the `receives` tag matches the `expects` tag.
