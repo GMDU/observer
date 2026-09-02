@@ -7,7 +7,7 @@ Currently this project is in early alpha. It is based on the unit testing functi
 The current syntax of Observer is inspired by [RSpec](https://rspec.info/).
 
 If you have multiple tests you would like to run at once, place them in functions,
-then add those functions to the tag `#observer:api`. Each of the functions must also
+then add those functions to the tag `#observer:api/test`. Each of the functions must also
 call `observer:api/perform` themselves.
 
 When you run `observer:api/start`, it will run all the tests at once, and number them.
@@ -41,9 +41,7 @@ Example:
 ```
 
 ### Start
-Runs the tests as listed in `#observer:api`.
-
-Running start with the tag `observer.dev` will run observer's internal tests.
+Runs the tests as listed in `#observer:api/test`.
 
 **Function:** `observer:api/start`  
 **Expects:** No value expected  
