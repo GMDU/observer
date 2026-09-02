@@ -2,7 +2,7 @@
 Unit testing for Datapacks.
 
 ## Overview
-Currently this project is in early alpha. It is based on the unit testing functionality from observer, although has been moved in to its own project for further love and attention.
+Currently this project is in early alpha. It is based on the unit testing functionality from moxlib, although has been moved in to its own project for further love and attention.
 
 The current syntax of Observer is inspired by [RSpec](https://rspec.info/).
 
