@@ -1,0 +1,1 @@
+function observer:test/register/init

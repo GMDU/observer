@@ -1,0 +1,1 @@
+tellraw @a {storage: "observer:test", nbt: "register.error", interpret: true}

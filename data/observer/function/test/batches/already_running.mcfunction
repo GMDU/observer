@@ -1,0 +1,2 @@
+execute store result storage observer:test/private batches.player_id int 1 run function observer:util/player/get_id
+return run function observer:test/batches/already_running.macro with storage observer:test/private batches

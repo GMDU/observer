@@ -1,0 +1,2 @@
+data modify storage observer:test register.temp.check set value []
+$data modify storage observer:test register.temp.check append from storage observer:api/test/register target.batches[{async: {id: "$(id)"}}]
