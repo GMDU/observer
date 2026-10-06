@@ -6,4 +6,4 @@ data modify storage observer:test/private batches.running[-1].batches set from s
 
 tag @s add observer.batches.player
 
-function observer:test/batches/player/schedule
+function observer:test/batches/schedule
