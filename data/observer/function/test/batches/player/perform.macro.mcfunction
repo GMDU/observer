@@ -5,5 +5,5 @@ tellraw @s [{text: "Performing batch: ", color: "green"}, {storage: "observer:te
 
 $function $(entrypoint)
 
-function observer:test/summary
+function observer:test/summary/init
 data modify storage observer:test private.run set value false

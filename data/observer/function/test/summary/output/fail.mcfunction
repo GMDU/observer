@@ -1,0 +1,3 @@
+tellraw @s {"score":{"name":"$iteration","objective":"observer.test"},"color":"red","extra":[{"text":" Failed: ","extra":[{"text":"\"","color":"white","extra":[{"nbt":"results.current.describes","storage":"observer:test/private","color":"gold", interpret: true},{"text":"\"","color":"white"}]}]}]}
+tellraw @s {"text":"Expected: ","color":"gray","extra":[{"nbt":"results.current.expects","storage":"observer:test/private","color":"white"}]}
+tellraw @s {"text":"Received: ","color":"gray","extra":[{"nbt":"results.current.receives","storage":"observer:test/private","color":"white"}]}

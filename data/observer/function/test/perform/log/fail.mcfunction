@@ -1,3 +1,6 @@
-tellraw @s {"score":{"name":"$iteration","objective":"observer.test"},"color":"red","extra":[{"text":" Failed: ","extra":[{"text":"\"","color":"white","extra":[{"nbt":"describes","storage":"observer:test/it","color":"gold", interpret: true},{"text":"\"","color":"white"}]}]}]}
-tellraw @s {"text":"Expected: ","color":"gray","extra":[{"nbt":"expects","storage":"observer:test/it","color":"white"}]}
-tellraw @s {"text":"Received: ","color":"gray","extra":[{"nbt":"receives","storage":"observer:test/it","color":"white"}]}
+data modify storage observer:test/private results.log append value {result: "fail", time: 0f, describes: "", expects: {}, receives: {}}
+
+execute store result storage observer:test/private results.log[-1].time int 1 run stopwatch query observer:test 1000
+data modify storage observer:test/private results.log[-1].describes set from storage observer:test/it describes
+data modify storage observer:test/private results.log[-1].expects set from storage observer:test/it expects
+data modify storage observer:test/private results.log[-1].receives set from storage observer:test/it receives

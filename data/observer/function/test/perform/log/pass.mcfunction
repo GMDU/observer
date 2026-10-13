@@ -1,2 +1,7 @@
 scoreboard players add $success observer.test 1
-# tellraw @s {score:{"name":"$iteration","objective":"observer.test"},color:"green","hover_event":{"action":"show_text","value":[[{"text":"Expected: ","color":"gray"},{"nbt":"expects","storage":"observer:test/it","color":"white"},"\n"],[{"text":"Received: ","color":"gray"},{"nbt":"receives","storage":"observer:test/it","color":"white"}]]},"extra":[{"text":" Passed: ","extra":[{"text":"\"","color":"white","extra":[{"nbt":"describes","storage":"observer:test/it","color":"gold", interpret: true},{"text":"\"","color":"white"}]}]}]}
+data modify storage observer:test/private results.log append value {result: "pass", time: 0f, describes: "", expects: {}, receives: {}}
+
+execute store result storage observer:test/private results.log[-1].time int 1 run stopwatch query observer:test 1000
+data modify storage observer:test/private results.log[-1].describes set from storage observer:test/it describes
+data modify storage observer:test/private results.log[-1].expects set from storage observer:test/it expects
+data modify storage observer:test/private results.log[-1].receives set from storage observer:test/it receives
